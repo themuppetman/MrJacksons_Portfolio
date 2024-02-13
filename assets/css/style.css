@@ -1,0 +1,21 @@
+:root {
+    --my-red: red;
+    --my-text: black;
+}
+ 
+body {
+    margin: 0;
+}
+
+header {
+    background: rgb(180,80,58);
+    background: linear-gradient(90deg, rgba(180,80,58,1) 0%, rgba(65,58,58,0.9220063025210083) 58%, rgba(69,156,252,1) 100%);
+    color: var(--my-text);
+    outline: auto;
+    display: flex;
+}
+
+h1 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
