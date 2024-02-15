@@ -5,17 +5,38 @@
  
 body {
     margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header {
+    padding: 20px;
     background: rgb(180,80,58);
     background: linear-gradient(90deg, rgba(180,80,58,1) 0%, rgba(65,58,58,0.9220063025210083) 58%, rgba(69,156,252,1) 100%);
     color: var(--my-text);
     outline: auto;
-    display: flex;
+    display: block;
 }
 
 h1 {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
+}
+/* navbars and placement reference (https://www.youtube.com/watch?v=R5aRUdM7Iio)
+/
+.navbar ul {
+    list-style: none;
+    background: rgb(206, 91, 91);
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: blueviolet;
 }
