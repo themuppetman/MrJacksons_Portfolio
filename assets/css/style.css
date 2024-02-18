@@ -33,6 +33,29 @@ h1 {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
 }
+
+h2 {
+    padding: 20px;
+    margin: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 36px;
+    color: white;
+    top: 0;
+}
+
+.vl {
+    position: relative;
+    display: inline;
+}
+
+.vl::after {
+    border-right: 6px solid white;
+    height: 200px;
+    top: 0;
+    position: absolute;
+    right: 0;
+  }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -44,7 +67,7 @@ h1 {
 .navbar ul {
     list-style: none;
     padding: 10px;
-    margin: 10px;
+    margin: 10px;s
 }
 
 .navbar li {
