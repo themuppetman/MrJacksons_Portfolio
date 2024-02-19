@@ -6,7 +6,7 @@
 I WANT to build a quality and functioning porforlio webpage
 SO THAT potential employers can easily assess my qualifications for positions needed
 ```
-
+<!-- Re-typing README for review and solid understandering -->
 ## Acceptance Criteria
 
 ```
