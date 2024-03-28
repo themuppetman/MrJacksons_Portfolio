@@ -123,14 +123,16 @@ main {
   display: flex;
   position: inherit;
   flex-direction: column;
-  align-items: center;
 }
-.about-me-container,
-.work-container,
-.contact-container {
+
+.vertical-line {
+  border-left: 5px solid white;
+  width: 5px;
   margin-left: 50px;
+  margin-right: 10px;
 }
 .about-me {
+  margin-bottom: 20px;
   display: flex;
   position: inherit;
   height: fit-content;
@@ -138,27 +140,15 @@ main {
   justify-content: space-between;
 }
 .about-me-header {
-  margin: 20px;
   height: fit-content;
-  min-width: fit-content;
+  min-width: 200px;
   color: #ffffff;
-  text-align: center;
+  text-align: right;
   font-family: "JockeyOne-Regular", sans-serif;
   font-size: 36px;
   font-weight: 400;
   display: flex;
   position: inherit;
-}
-.top-line {
-  margin: 20px;
-  border-radius: 0px;
-  display: flex;
-  position: inherit;
-  /* left: 189px;
-  top: 0px; */
-  transform: translate(-2.5px, 0px);
-  overflow: visible;
-  height: auto;
 }
 .about-me-container {
   background: linear-gradient(
@@ -169,7 +159,6 @@ main {
   );
   border-radius: 20px;
   display: flex;
-  position: inherit;
   justify-content: center;
 }
 .about-text {
@@ -184,7 +173,7 @@ main {
   justify-content: center;
 }
 .work {
-  margin: 20px;
+  margin-bottom: 20px;
   display: flex;
   position: inherit;
   height: fit-content;
@@ -192,27 +181,15 @@ main {
   justify-content: space-between;
 }
 .work-header {
-  margin: 20px;
   height: fit-content;
-  min-width: fit-content;
+  min-width: 200px;
   color: #ffffff;
-  text-align: center;
+  text-align: right;
   font-family: "JockeyOne-Regular", sans-serif;
   font-size: 36px;
   font-weight: 400;
   display: flex;
   position: inherit;
-}
-.mid-line {
-  margin: 20px;
-  border-radius: 0px;
-  display: flex;
-  position: inherit;
-  /* left: 189px;
-  top: 0px; */
-  transform: translate(-2.5px, 0px);
-  overflow: visible;
-  height: auto;
 }
 .work-container {
   background: linear-gradient(
@@ -224,60 +201,16 @@ main {
   border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
-  position: inherit;
-  justify-content: space-between;
-}
-.contact-me {
-  display: flex;
-  position: inherit;
-  height: fit-content;
-  width: fit-content;
-  justify-content: space-between;
-}
-.contact-container {
-  background: linear-gradient(
-    90deg,
-    rgba(152, 152, 152, 1) 0%,
-    rgba(176, 176, 176, 1) 49.50000047683716%,
-    rgba(119, 119, 119, 1) 100%
-  );
-  border-radius: 20px;
-  display: flex;
-  position: inherit;
-  justify-content: center;
-}
-.contact-me-header {
-  color: #ffffff;
-  text-align: center;
-  font-family: "JockeyOne-Regular", sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  display: flex;
-  position: inherit;
-  left: 0px;
-  top: 1081px;
-}
-.bottom-line {
-  border-radius: 0px;
-  width: 198px;
-  height: 0px;
-  display: flex;
-  position: inherit;
-  left: 189px;
-  top: 1061px;
-  transform: translate(-2.5px, 0px);
-  overflow: visible;
 }
 .groove-guide {
   border-radius: 20px;
-  width: 850px;
+  width: 1000px;
   height: 350px;
   display: flex;
   position: inherit;
-  left: 100px;
-  top: 26px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
-  object-fit: cover;
+  justify-content: center;
+  align-items: center;
 }
 .weather-dashboard {
   border-radius: 20px;
@@ -285,21 +218,8 @@ main {
   height: 150px;
   display: flex;
   position: inherit;
-  left: 100px;
-  top: 596px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
-  object-fit: cover;
-}
-.semantic-html {
-  border-radius: 20px;
-  width: 400px;
-  height: 150px;
-  display: flex;
-  position: inherit;
-  left: 553px;
-  top: 596px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
-  object-fit: cover;
+  flex-wrap: wrap;
 }
 .weather-label {
   background: #888888;
@@ -321,6 +241,16 @@ main {
   position: inherit;
   left: 124px;
   top: 692px;
+}
+.semantic-html {
+  border-radius: 20px;
+  width: 400px;
+  height: 150px;
+  display: flex;
+  position: inherit;
+  left: 553px;
+  top: 596px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
 }
 .sem-label {
   background: #7f7f7f;
@@ -354,7 +284,6 @@ main {
   left: 550px;
   top: 411px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
-  object-fit: cover;
 }
 .quiz-label {
   background: #777777;
@@ -386,7 +315,6 @@ main {
   left: 100px;
   top: 412px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
-  object-fit: cover;
 }
 .password-label {
   background: #989898;
@@ -409,13 +337,36 @@ main {
   left: 129px;
   top: 505px;
 }
-.footer {
-  width: 1050px;
-  height: 225px;
+.contact-me {
+  margin-bottom: 20px;
   display: flex;
   position: inherit;
-  left: 318px;
-  top: 1453px;
+  height: fit-content;
+  width: fit-content;
+  justify-content: space-between;
+}
+.contact-header {
+  height: fit-content;
+  min-width: 200px;
+  color: #ffffff;
+  text-align: right;
+  font-family: "JockeyOne-Regular", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  display: flex;
+  position: inherit;
+}
+.contact-container {
+  background: linear-gradient(
+    90deg,
+    rgba(152, 152, 152, 1) 0%,
+    rgba(176, 176, 176, 1) 49.50000047683716%,
+    rgba(119, 119, 119, 1) 100%
+  );
+  border-radius: 20px;
+  display: flex;
+  position: inherit;
+  justify-content: center;
 }
 .contact-container {
   background: linear-gradient(
