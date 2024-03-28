@@ -1,15 +1,17 @@
 
 body {
-  height: 1678px;
-  width: 100%;
-  position: relative;
+  max-width: fit-content;
+  max-height: fit-content;
+  position: inherit;
+  align-items: center;
   background: #777777;
 }
 .header {
-  display: flex;
+  display: inline-flex;
   position: inherit;
   left: 0px;
   top: 0px;
+  bottom: 0;
   background: linear-gradient(
     90deg,
     rgba(94, 147, 76, 1) 30.000001192092896%,
@@ -18,6 +20,7 @@ body {
   border-radius: 20px;
   width: 100%;
   max-height: fit-content;
+  min-width: fit-content;
 }
 .seth-jackson {
   margin: 20px;
@@ -26,32 +29,46 @@ body {
   font-family: "JockeyOne-Regular", sans-serif;
   font-size: 40px;
   font-weight: 400;
-  text-decoration: underline;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: underline white;
   position: inherit;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  -webkit-text-stroke: 0.5px #ffffff;
+  text-decoration-skip-ink: none; 
+  padding-bottom: 3px;
+}  
+nav {
+    margin: 40px 20px;
+    margin-left: auto;
+    justify-content: center;
 }
-.about-button {
+button {
+    background: none;
+    border-radius: 20px;
+    border: #7f7f7f;
+}
+.about-button,
+.work-button,
+.contact-me-button,
+.resume-button {
+  color: #ffffff;
+  font-family: "JockeyOne-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  display: inline-flex;
+  flex-flow: row;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: underline black;
+  text-decoration-skip-ink: none; 
+  padding-bottom: 3px;
+}
+/* .work-button {
   color: #ffffff;
   font-family: "JockeyOne-Regular", sans-serif;
   font-size: 32px;
   font-weight: 400;
   text-decoration: underline;
-  display: flex;
-  position: inherit;
-  justify-content: flex-end;
-}
-.work-button {
-  color: #ffffff;
-  font-family: "JockeyOne-Regular", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  text-decoration: underline;
-  display: flex;
-  position: inherit;
-  justify-content: flex-end;
 }
 .contact-me-button {
   color: #ffffff;
@@ -59,9 +76,6 @@ body {
   font-size: 32px;
   font-weight: 400;
   text-decoration: underline;
-  display: flex;
-  position: inherit;
-  justify-content: flex-end;
 }
 .resume-button {
   color: #ffffff;
@@ -69,111 +83,82 @@ body {
   font-size: 32px;
   font-weight: 400;
   text-decoration: underline;
-  display: flex;
-  position: inherit;
-  justify-content: flex-end;
-}
+} */
 .sub-header {
-  width: 1160px;
+  width: 100%;
   height: 169px;
-  position: absolute;
-  left: 72px;
-  top: 93px;
+  position: inherit;
+  background-image: url("./images/Sub_Head_Img.jpeg");
+  background-size: cover; /* Cover the entire div with the image */
+  background-position: center;
+  border-radius: 20px;
 }
-.avatar {
+img {
   border-radius: 50%;
-  width: 168px;
-  height: 169px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
+  width: 175px;
+  height: 175px;
+  position: relative; 
+  top: -7.5px;
 }
-.collaborate-develop-design-and-repeat {
+
+/* .sub_header_img {
+  width: 100%;
+  height: 169px;
+  position: inherit;
+} */
+p {
+  margin: 10px;
+  padding: 10px;
   color: #ffffff;
-  text-align: left;
   font-family: "JockeyOne-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  position: absolute;
-  left: 789px;
-  top: 135px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
+  position: inherit;
+  right: 20px;
+  justify-content: end;
 }
-.side-bar {
-  width: 189px;
-  height: 1259px;
-  position: absolute;
-  left: 74px;
-  top: 406px;
+main {
+  display: flex;
+  position: inherit;
+  flex-direction: column;
+  align-items: center;
+}
+.about-me-container,
+.work-container,
+.contact-container {
+  margin-left: 50px;
+}
+.about-me {
+  display: flex;
+  position: inherit;
+  height: fit-content;
+  width: fit-content;
+  justify-content: space-between;
 }
 .about-me-header {
-  color: #ffffff;
-  text-align: left;
-  font-family: "JockeyOne-Regular", sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 10px;
-}
-.contact-me-header {
+  margin: 20px;
+  height: fit-content;
+  min-width: fit-content;
   color: #ffffff;
   text-align: center;
   font-family: "JockeyOne-Regular", sans-serif;
   font-size: 36px;
   font-weight: 400;
-  position: absolute;
-  left: 0px;
-  top: 1081px;
-}
-.work-header {
-  color: #ffffff;
-  text-align: left;
-  font-family: "JockeyOne-Regular", sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  position: absolute;
-  left: 29px;
-  top: 289px;
+  display: flex;
+  position: inherit;
 }
 .top-line {
+  margin: 20px;
   border-radius: 0px;
-  width: 198px;
-  height: 0px;
-  position: absolute;
-  left: 189px;
-  top: 0px;
+  display: flex;
+  position: inherit;
+  /* left: 189px;
+  top: 0px; */
   transform: translate(-2.5px, 0px);
   overflow: visible;
-}
-.bottom-line {
-  border-radius: 0px;
-  width: 198px;
-  height: 0px;
-  position: absolute;
-  left: 189px;
-  top: 1061px;
-  transform: translate(-2.5px, 0px);
-  overflow: visible;
-}
-.mid-line {
-  border-radius: 0px;
-  width: 749px;
-  height: 0px;
-  position: absolute;
-  left: 189px;
-  top: 255px;
-  transform: translate(-2.5px, 0px);
-  overflow: visible;
-}
-.about-me {
-  width: 1050px;
-  height: 225px;
-  position: absolute;
-  left: 316px;
-  top: 392px;
+  height: auto;
 }
 .about-me-container {
   background: linear-gradient(
@@ -183,31 +168,53 @@ body {
     rgba(119, 119, 119, 1) 100%
   );
   border-radius: 20px;
-  width: 1050px;
-  height: 225px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
+  display: flex;
+  position: inherit;
+  justify-content: center;
 }
 .about-text {
+  margin: 25px;
+  color: #ffffff;
+  text-align: justify;
+  font-family: "JockeyOne-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  position: inherit;
+  justify-content: center;
+}
+.work {
+  margin: 20px;
+  display: flex;
+  position: inherit;
+  height: fit-content;
+  width: fit-content;
+  justify-content: space-between;
+}
+.work-header {
+  margin: 20px;
+  height: fit-content;
+  min-width: fit-content;
   color: #ffffff;
   text-align: center;
   font-family: "JockeyOne-Regular", sans-serif;
-  font-size: 22px;
+  font-size: 36px;
   font-weight: 400;
-  position: absolute;
-  left: 180px;
-  top: 4px;
-  width: 669px;
+  display: flex;
+  position: inherit;
 }
-.main {
-  width: 1051px;
-  height: 800px;
-  position: absolute;
-  left: 317px;
-  top: 635px;
+.mid-line {
+  margin: 20px;
+  border-radius: 0px;
+  display: flex;
+  position: inherit;
+  /* left: 189px;
+  top: 0px; */
+  transform: translate(-2.5px, 0px);
+  overflow: visible;
+  height: auto;
 }
-.main-container {
+.work-container {
   background: linear-gradient(
     90deg,
     rgba(152, 152, 152, 1) 0%,
@@ -215,18 +222,58 @@ body {
     rgba(119, 119, 119, 1) 100%
   );
   border-radius: 20px;
-  width: 1051px;
-  height: 800px;
-  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  position: inherit;
+  justify-content: space-between;
+}
+.contact-me {
+  display: flex;
+  position: inherit;
+  height: fit-content;
+  width: fit-content;
+  justify-content: space-between;
+}
+.contact-container {
+  background: linear-gradient(
+    90deg,
+    rgba(152, 152, 152, 1) 0%,
+    rgba(176, 176, 176, 1) 49.50000047683716%,
+    rgba(119, 119, 119, 1) 100%
+  );
+  border-radius: 20px;
+  display: flex;
+  position: inherit;
+  justify-content: center;
+}
+.contact-me-header {
+  color: #ffffff;
+  text-align: center;
+  font-family: "JockeyOne-Regular", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  display: flex;
+  position: inherit;
   left: 0px;
-  top: 0px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.75);
+  top: 1081px;
+}
+.bottom-line {
+  border-radius: 0px;
+  width: 198px;
+  height: 0px;
+  display: flex;
+  position: inherit;
+  left: 189px;
+  top: 1061px;
+  transform: translate(-2.5px, 0px);
+  overflow: visible;
 }
 .groove-guide {
   border-radius: 20px;
   width: 850px;
   height: 350px;
-  position: absolute;
+  display: flex;
+  position: inherit;
   left: 100px;
   top: 26px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
@@ -236,7 +283,8 @@ body {
   border-radius: 20px;
   width: 400px;
   height: 150px;
-  position: absolute;
+  display: flex;
+  position: inherit;
   left: 100px;
   top: 596px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
@@ -246,7 +294,8 @@ body {
   border-radius: 20px;
   width: 400px;
   height: 150px;
-  position: absolute;
+  display: flex;
+  position: inherit;
   left: 553px;
   top: 596px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
@@ -257,7 +306,8 @@ body {
   border-radius: 0px 10px 10px 0px;
   width: 111px;
   height: 37px;
-  position: absolute;
+  display: flex;
+  position: inherit;
   left: 100px;
   top: 694px;
 }
@@ -267,7 +317,8 @@ body {
   font-family: "JockeyOne-Regular", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  position: absolute;
+  display: flex;
+  position: inherit;
   left: 124px;
   top: 692px;
 }
@@ -276,7 +327,8 @@ body {
   border-radius: 0px 10px 10px 0px;
   width: 111px;
   height: 38.82px;
-  position: absolute;
+  display: flex;
+  position: inherit;
   left: 553px;
   top: 694.05px;
 }
@@ -286,7 +338,8 @@ body {
   font-family: "JockeyOne-Regular", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  position: absolute;
+  display: flex;
+  position: inherit;
   left: 573px;
   top: 693px;
   width: 71px;
@@ -296,7 +349,8 @@ body {
   border-radius: 20px;
   width: 400px;
   height: 150px;
-  position: absolute;
+  display: flex;
+  position: inherit;
   left: 550px;
   top: 411px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
@@ -307,7 +361,8 @@ body {
   border-radius: 0px 10px 10px 0px;
   width: 111px;
   height: 37px;
-  position: absolute;
+  display: flex;
+  position: inherit;
   left: 550px;
   top: 508px;
 }
@@ -317,7 +372,8 @@ body {
   font-family: "JockeyOne-Regular", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  position: absolute;
+  display: flex;
+  position: inherit;
   left: 573px;
   top: 517px;
 }
@@ -325,7 +381,8 @@ body {
   border-radius: 20px;
   width: 400px;
   height: 150px;
-  position: absolute;
+  display: flex;
+  position: inherit;
   left: 100px;
   top: 412px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
@@ -336,7 +393,8 @@ body {
   border-radius: 0px 10px 10px 0px;
   width: 111px;
   height: 37px;
-  position: absolute;
+  display: flex;
+  position: inherit;
   left: 100px;
   top: 508px;
 }
@@ -346,14 +404,16 @@ body {
   font-family: "JockeyOne-Regular", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  position: absolute;
+  display: flex;
+  position: inherit;
   left: 129px;
   top: 505px;
 }
 .footer {
   width: 1050px;
   height: 225px;
-  position: absolute;
+  display: flex;
+  position: inherit;
   left: 318px;
   top: 1453px;
 }
@@ -367,7 +427,8 @@ body {
   border-radius: 20px;
   width: 1050px;
   height: 225px;
-  position: absolute;
+  display: flex;
+  position: inherit;
   left: 0px;
   top: 0px;
 }
@@ -377,7 +438,8 @@ body {
   font-family: "JockeyOne-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  position: absolute;
+  display: flex;
+  position: inherit;
   left: 152px;
   top: 53px;
   width: 293px;
@@ -389,7 +451,8 @@ body {
   font-family: "JockeyOne-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  position: absolute;
+  display: flex;
+  position: inherit;
   left: 602px;
   top: 57px;
   width: 293px;
@@ -401,7 +464,8 @@ body {
   font-family: "JockeyOne-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  position: absolute;
+  display: flex;
+  position: inherit;
   left: 605px;
   top: 139px;
   width: 293px;
@@ -413,7 +477,8 @@ body {
   font-family: "JockeyOne-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  position: absolute;
+  display: flex;
+  position: inherit;
   left: 230px;
   top: 134px;
   width: 137px;
