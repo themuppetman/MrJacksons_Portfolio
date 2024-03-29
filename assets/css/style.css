@@ -4,7 +4,7 @@ body {
   max-height: fit-content;
   position: inherit;
   align-items: center;
-  background: #777777;
+  background: #4a4949;
 }
 .header {
   display: inline-flex;
@@ -117,12 +117,13 @@ p {
   display: flex;
   position: inherit;
   right: 20px;
-  justify-content: end;
+  
 }
 main {
   display: flex;
   position: inherit;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .vertical-line {
@@ -136,7 +137,7 @@ main {
   display: flex;
   position: inherit;
   height: fit-content;
-  width: fit-content;
+  max-width: fit-content;
   justify-content: space-between;
 }
 .about-me-header {
@@ -151,14 +152,18 @@ main {
   position: inherit;
 }
 .about-me-container {
+  height: fit-content;
+  width: fit-content;
   background: linear-gradient(
     90deg,
     rgba(152, 152, 152, 1) 0%,
     rgba(176, 176, 176, 1) 49.50000047683716%,
     rgba(119, 119, 119, 1) 100%
   );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   display: flex;
+  position: inherit;
   justify-content: center;
 }
 .about-text {
@@ -166,7 +171,7 @@ main {
   color: #ffffff;
   text-align: justify;
   font-family: "JockeyOne-Regular", sans-serif;
-  font-size: 24px;
+  font-size: auto;
   font-weight: 400;
   display: flex;
   position: inherit;
@@ -198,38 +203,47 @@ main {
     rgba(176, 176, 176, 1) 49.50000047683716%,
     rgba(119, 119, 119, 1) 100%
   );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1 auto; 
 }
 .groove-guide {
+  margin: 20px auto;
   border-radius: 20px;
-  width: 1000px;
+  width: 90%;
   height: 350px;
+  background-image: url("./images/Groove_Guide.png");
+  background-size: cover; 
+  background-position: center;
   display: flex;
   position: inherit;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
+  justify-items: center;
 }
 .weather-dashboard {
   border-radius: 20px;
-  width: 400px;
+  width: fit-content;
   height: 150px;
+  background-image: url("./images/Weather_Dashboard_code.png");
+  background-size: cover; 
+  background-position: center;
   display: flex;
   position: inherit;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
   flex-wrap: wrap;
+  flex: 0 0 calc(50% - 20px);
+  margin: 10px;
 }
 .weather-label {
+  margin: auto 0;
   background: #888888;
   border-radius: 0px 10px 10px 0px;
-  width: 111px;
-  height: 37px;
+  width: fit-content;
+  height: fit-content;
   display: flex;
   position: inherit;
-  left: 100px;
-  top: 694px;
 }
 .weather-text {
   color: #ffffff;
@@ -244,106 +258,80 @@ main {
 }
 .semantic-html {
   border-radius: 20px;
-  width: 400px;
+  width: fit-content;
   height: 150px;
+  background-image: url("./images/Semantic.jpeg");
+  background-size: cover; 
+  background-position: center;
   display: flex;
   position: inherit;
-  left: 553px;
-  top: 596px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  flex-wrap: wrap;
+  flex: 0 0 calc(50% - 20px);
+  margin: 10px;
 }
 .sem-label {
-  background: #7f7f7f;
+  margin: auto 0;
+  background: #888888;
   border-radius: 0px 10px 10px 0px;
-  width: 111px;
-  height: 38.82px;
+  width: fit-content;
+  height: fit-content;
   display: flex;
   position: inherit;
-  left: 553px;
-  top: 694.05px;
 }
-.sem-text {
-  color: #ffffff;
-  text-align: center;
-  font-family: "JockeyOne-Regular", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  display: flex;
-  position: inherit;
-  left: 573px;
-  top: 693px;
-  width: 71px;
-  height: 38px;
-}
-.quiz-container {
+.quiz {
   border-radius: 20px;
-  width: 400px;
+  width: fit-content;
   height: 150px;
+  background-image: url("./images/Code_Quiz.png");
+  background-size: cover; 
+  background-position: center;
   display: flex;
   position: inherit;
-  left: 550px;
-  top: 411px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  flex-wrap: wrap;
+  flex: 0 0 calc(50% - 20px);
+  margin: 10px;
 }
 .quiz-label {
-  background: #777777;
+  margin: auto 0;
+  background: #888888;
   border-radius: 0px 10px 10px 0px;
-  width: 111px;
-  height: 37px;
+  width: fit-content;
+  height: fit-content;
   display: flex;
   position: inherit;
-  left: 550px;
-  top: 508px;
 }
-.coding-quiz {
-  color: #ffffff;
-  text-align: center;
-  font-family: "JockeyOne-Regular", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  display: flex;
-  position: inherit;
-  left: 573px;
-  top: 517px;
-}
-.password-container {
+.password {
   border-radius: 20px;
-  width: 400px;
+  width: fit-content;
   height: 150px;
+  background-image: url("./images/Password_Gen.png");
+  background-size: cover; 
+  background-position: center;
   display: flex;
   position: inherit;
-  left: 100px;
-  top: 412px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  flex-wrap: wrap;
+  flex: 0 0 calc(50% - 20px);
+  margin: 10px;
 }
 .password-label {
-  background: #989898;
+  margin: auto 0;
+  background: #888888;
   border-radius: 0px 10px 10px 0px;
-  width: 111px;
-  height: 37px;
+  width: fit-content;
+  height: fit-content;
   display: flex;
   position: inherit;
-  left: 100px;
-  top: 508px;
-}
-.password-text {
-  color: #ffffff;
-  text-align: center;
-  font-family: "JockeyOne-Regular", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  display: flex;
-  position: inherit;
-  left: 129px;
-  top: 505px;
 }
 .contact-me {
   margin-bottom: 20px;
   display: flex;
   position: inherit;
-  height: fit-content;
+  /* height: fit-content;
   width: fit-content;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 .contact-header {
   height: fit-content;
@@ -363,75 +351,72 @@ main {
     rgba(176, 176, 176, 1) 49.50000047683716%,
     rgba(119, 119, 119, 1) 100%
   );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   display: flex;
-  position: inherit;
-  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
-.contact-container {
-  background: linear-gradient(
-    90deg,
-    rgba(152, 152, 152, 1) 0%,
-    rgba(176, 176, 176, 1) 49.50000047683716%,
-    rgba(119, 119, 119, 1) 100%
-  );
-  border-radius: 20px;
-  width: 1050px;
-  height: 225px;
-  display: flex;
-  position: inherit;
-  left: 0px;
-  top: 0px;
-}
+
+
 .email {
-  color: #ffffff;
-  text-align: center;
-  font-family: "JockeyOne-Regular", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
+  border-radius: 20px;
+  width: fit-content;
+  height: 50px;
+  background-image: url("./images/email_1.png");
+  background-size: cover; 
+  background-position: center;
   display: flex;
   position: inherit;
-  left: 152px;
-  top: 53px;
-  width: 293px;
-  height: 31px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  flex-wrap: wrap;
+  flex: 0 0 calc(50% - 20px);
+  margin: 10px;
 }
+
 .linked-in {
-  color: #ffffff;
-  text-align: center;
-  font-family: "JockeyOne-Regular", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
+  border-radius: 20px;
+  width: fit-content;
+  height: 50px;
+  background-image: url("./images/LinkedIn_1.jpeg");
+  background-size: cover; 
+  background-position: center%;
   display: flex;
   position: inherit;
-  left: 602px;
-  top: 57px;
-  width: 293px;
-  height: 31px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  flex-wrap: wrap;
+  flex: 0 0 calc(50% - 20px);
+  margin: 10px;
 }
 .insta {
-  color: #ffffff;
-  text-align: center;
-  font-family: "JockeyOne-Regular", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
+  border-radius: 20px;
+  width: fit-content;
+  height: 50px;
+  background-image: url("./images/LinkedIn_1.jpeg");
+  background-size: cover; 
+  background-position: center;
   display: flex;
   position: inherit;
-  left: 605px;
-  top: 139px;
-  width: 293px;
-  height: 31px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  flex-wrap: wrap;
+  flex: 0 0 calc(50% - 20px);
+  margin: 10px;
 }
 .phone-number {
-  color: #ffffff;
-  text-align: center;
-  font-family: "JockeyOne-Regular", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
+  border-radius: 20px;
+  width: fit-content;
+  height: 50px;
+  background-image: url("./images/LinkedIn_1.jpeg");
+  background-size: cover; 
+  background-position: center;
   display: flex;
   position: inherit;
-  left: 230px;
-  top: 134px;
-  width: 137px;
-  height: 31px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+  flex-wrap: wrap;
+  flex: 0 0 calc(50% - 20px);
+  margin: 10px;
 }
+
+
+
+
