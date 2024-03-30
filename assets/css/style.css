@@ -1,5 +1,6 @@
 
 body {
+  width: 100%;
   max-width: fit-content;
   max-height: fit-content;
   position: inherit;
@@ -18,7 +19,7 @@ body {
     rgba(124, 197, 99, 1) 82.4999988079071%
   );
   border-radius: 20px;
-  width: 100%;
+  width: 100vw;
   max-height: fit-content;
   min-width: fit-content;
 }
@@ -52,6 +53,7 @@ button {
 .work-button,
 .contact-me-button,
 .resume-button {
+  margin: auto 10px;
   color: #ffffff;
   font-family: "JockeyOne-Regular", sans-serif;
   font-size: 32px;
@@ -62,6 +64,7 @@ button {
   text-decoration: underline black;
   text-decoration-skip-ink: none; 
   padding-bottom: 3px;
+  justify-content: space-between;
 }
 /* .work-button {
   color: #ffffff;
@@ -85,7 +88,7 @@ button {
   text-decoration: underline;
 } */
 .sub-header {
-  width: 100%;
+  width: 100vw;
   height: 169px;
   position: inherit;
   background-image: url("./images/Sub_Head_Img.jpeg");
@@ -116,15 +119,27 @@ p {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   display: flex;
   position: inherit;
+  justify-content: right;
   right: 20px;
   
 }
-main {
+/* main {
   display: flex;
   position: inherit;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
+} */
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%; 
+  flex-grow: 1;
 }
+
 
 .vertical-line {
   border-left: 5px solid white;
@@ -153,7 +168,7 @@ main {
 }
 .about-me-container {
   height: fit-content;
-  width: fit-content;
+  width: 100vw;
   background: linear-gradient(
     90deg,
     rgba(152, 152, 152, 1) 0%,
@@ -206,8 +221,11 @@ main {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   display: flex;
+  position: inherit;
   flex-wrap: wrap;
-  flex-grow: 1 auto; 
+  justify-content: flex-end;
+  width: 100%;
+  
 }
 .groove-guide {
   margin: 20px auto;
@@ -224,7 +242,7 @@ main {
 }
 .weather-dashboard {
   border-radius: 20px;
-  width: fit-content;
+  width: 100%;
   height: 150px;
   background-image: url("./images/Weather_Dashboard_code.png");
   background-size: cover; 
@@ -258,8 +276,8 @@ main {
 }
 .semantic-html {
   border-radius: 20px;
-  width: fit-content;
-  height: 150px;
+  width: 100%;
+  min-height: fit-content;
   background-image: url("./images/Semantic.jpeg");
   background-size: cover; 
   background-position: center;
@@ -281,7 +299,7 @@ main {
 }
 .quiz {
   border-radius: 20px;
-  width: fit-content;
+  width: 100%;
   height: 150px;
   background-image: url("./images/Code_Quiz.png");
   background-size: cover; 
@@ -304,7 +322,7 @@ main {
 }
 .password {
   border-radius: 20px;
-  width: fit-content;
+  width: 100%;
   height: 150px;
   background-image: url("./images/Password_Gen.png");
   background-size: cover; 
@@ -362,7 +380,7 @@ main {
 .email {
   border-radius: 20px;
   width: fit-content;
-  height: 50px;
+  height: 75px;
   background-image: url("./images/email_1.png");
   background-size: cover; 
   background-position: center;
@@ -377,7 +395,7 @@ main {
 .linked-in {
   border-radius: 20px;
   width: fit-content;
-  height: 50px;
+  height: 75px;
   background-image: url("./images/LinkedIn_1.jpeg");
   background-size: cover; 
   background-position: center%;
@@ -391,7 +409,7 @@ main {
 .insta {
   border-radius: 20px;
   width: fit-content;
-  height: 50px;
+  height: 75px;
   background-image: url("./images/LinkedIn_1.jpeg");
   background-size: cover; 
   background-position: center;
@@ -405,7 +423,7 @@ main {
 .phone-number {
   border-radius: 20px;
   width: fit-content;
-  height: 50px;
+  height: 75px;
   background-image: url("./images/LinkedIn_1.jpeg");
   background-size: cover; 
   background-position: center;
